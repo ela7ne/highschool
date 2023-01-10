@@ -15,10 +15,9 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+def slope(x1, y1, x2, y2):
+    return (y2 - y1)/(x2 - x1)
 
-
+def intercept(x1, y1, x2, y2):
+    m = slope(x1, y1, x2, y2)
+    return float(y1 - m*x1)

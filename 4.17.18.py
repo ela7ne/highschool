@@ -15,10 +15,5 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
-
-
+def f2c(temp):
+    return int(round((2- 32.0) * 5.0/9))

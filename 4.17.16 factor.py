@@ -15,10 +15,8 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
+def is_factor(factor, num):
+    if num % factor == 0:
         return True
     else:
         return False
-
-

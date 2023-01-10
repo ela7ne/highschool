@@ -15,10 +15,9 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
+def is_multi(multiple, num):
+    if multiple % num == 0:
         return True
     else:
         return False
-
 

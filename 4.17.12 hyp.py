@@ -4,7 +4,7 @@
 #
 # Author:      hotdo
 #
-# Created:     03/04/2022
+# Created:     02/04/2022
 # Copyright:   (c) hotdo 2022
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
@@ -15,10 +15,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
-
-
+def hypot(a, b):
+    import math
+    return math.sqrt(a**2 + b**2)**0.5

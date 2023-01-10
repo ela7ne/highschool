@@ -1,10 +1,10 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
+# Name:        module2
 # Purpose:
 #
 # Author:      hotdo
 #
-# Created:     03/04/2022
+# Created:     02/04/2022
 # Copyright:   (c) hotdo 2022
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
@@ -15,10 +15,12 @@ def main():
 if __name__ == '__main__':
     main()
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
 
+def convertsecs(secs):
+    seconds = secs % (24 *3600)
+    hour = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return "{} hours {} minutes and {} seconds".format(hour, minutes, seconds)
 
