@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        module2
+# Name:        module3
 # Purpose:
 #
 # Author:      hotdo
@@ -15,9 +15,18 @@ def main():
 if __name__ == '__main__':
     main()
 
-from math import sqrt
-print("Input lengths of shorter triangle sides:")
-a = float(input("a: "))
-b = float(input("b: "))
-c = sqrt(a**2 + b**2)
-print("The length of the hypotenuse is:", c )
+a = int(input("a"))
+b = int(input("b"))
+c = int(input("c"))
+
+
+def check_right_angle(a, b, c):
+    if (a + b < c) or (a + c < b) or (b + c < a) :
+        return False
+    else:
+        return True
+
+if check_right_angle(a, b, c):
+    print("valid")
+else:
+    print("invalid")
